@@ -1,0 +1,143 @@
+  /* basic */
+body {background-color: rgb(48, 48, 48);}
+h2 {color: blue;}
+p {color: white;}
+html {scroll-behavior: smooth;}
+  
+  /* Background image container */
+.hero-section {
+    position: relative;
+    background-image: url('pictures/coding-bg.webp'); 
+    background-size: cover;
+    background-position: center;
+    height: 520px; 
+  }
+  
+  /* Overlay to make text more readable */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Style for the text */
+  h2 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1.2em;
+    max-width: 800px; 
+    margin-top: 10px;
+  }
+
+  /* Footer */
+.footer {
+    position: fixed; /* Sticks the footer to the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Dark background */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 10px 0; /* Padding for space inside footer */
+    font-size: 1em; /* Font size */
+    z-index: 1000; /* Ensure it's on top of other elements */
+  }
+  
+  /* Adjust text size for smaller screens */
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 0.9em; /* Slightly reduce font size on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      font-size: 0.8em; /* Reduce font size on mobile */
+    }
+  }
+  
+/* Style the fixed button */
+.popup-btn {
+    position: fixed;
+    bottom: 63px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000; 
+  }
+  
+  .popup-btn:hover {
+    background-color: #0056b3;
+  }
+  
+
+  /* The pop-up content (initially hidden) */
+  .popup-content {
+    display: none; 
+    position: fixed;
+    bottom: 63px;
+    right: 20px;
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001; 
+    border-radius: 8px;
+  }
+  
+  /* Close button inside the pop-up */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: red;
+  }
+  
+  /* Style for the anchor button inside the pop-up */
+  .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #218838;
+  }
+  
+
+  .jumbotron-black p {
+    color: black; /* Make paragraph text black */
+}
+
+.jumbotron {
+    padding-left: 120px; /* Add 70 pixels of padding to the left */
+}
